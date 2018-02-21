@@ -22,6 +22,7 @@
         android:selectAllOnFocus="false"
         android:singleLine="false"
         android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
       />
 
     <EditText
@@ -34,6 +35,7 @@
         android:hint="Password"
         android:inputType="textPassword"
         android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
          />
 
     <Button

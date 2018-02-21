@@ -3,6 +3,7 @@ package com.example.nikitajoshi.nikita;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -29,14 +30,14 @@ public class MainActivity extends AppCompatActivity {
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                validate(Name.getText().toString(),Password.getText().toString());
+                validate(Name.getText().toString().trim(),Password.getText().toString().trim());
             }
         });
 
     }
     private void validate(String userName,String userPassword)
     {
-        if((userName.equals("Admin") )&& (userPassword.equals("1234")))
+        if((userName.equals("Admin"))&& (userPassword.equals("1234")))
         {
             Intent intent= new Intent(MainActivity.this,SecondActivity.class);
             startActivity(intent);
